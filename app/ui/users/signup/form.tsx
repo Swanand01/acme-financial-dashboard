@@ -3,9 +3,9 @@
 import { lusitana } from '@/app/ui/fonts';
 import { AtSymbolIcon, KeyIcon, UserIcon } from '@heroicons/react/24/outline';
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
-import { Button } from './button';
+import { Button } from '../../button';
 import { useFormState, useFormStatus } from 'react-dom';
-import { createUser } from '@/app/lib/actions';
+import { createUser } from '@/app/lib/users/actions';
 
 export default function SignupForm() {
   const initialState = { message: null, errors: {} };
